@@ -21,17 +21,29 @@ body{
     min-width: 50px;
     max-width: 300px;
     width: 300px;
-    
+    transition: width 0.5s;
 }
+
+.side-menu.collapse{
+    width: 50px;
+}
+
 
 
 .menu-item-wrapper{
     width: 100%;
     min-height: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: height 0.5s;
 }
+
+.active.menu-item-wrapper{
+    height: 200px;
+}
+
 .sub-menu{
     width: 100%;
 }
@@ -42,6 +54,7 @@ body{
 .menu-item{
     width: 100%;
     min-height: 50px;
+    max-height: 50px;
     line-height: 50px;
     position: relative;
 }
@@ -72,6 +85,14 @@ body{
 .menu-item:hover{
     background-color: #555;
 }
+
+.side-menu.collapse .menu-item-label,.side-menu.collapse .menu-item-arrow{
+    visibility: hidden;
+    
+}
+
+
+
 
 
 .scroll-pane{

@@ -14,4 +14,18 @@ $().ready(()=>{
         }
 
     })
+
+    // 按钮折叠
+
+
+    $('#menu-collapse-btn').click(function(){
+        $('.side-menu').toggleClass('collapse');
+    
+    })
+
+    $('.menu-item-arrow').click(function(){
+        $(this).parent().parent().toggleClass('active')
+    })
+
+
 })
