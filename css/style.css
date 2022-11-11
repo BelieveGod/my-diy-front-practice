@@ -112,11 +112,51 @@ body{
     z-index: 1;
 }
 
+/* 右侧主体 */
 
 .out-main{
     background-color: #aaa;
+    width: 100vw;
 }
+
 
 .header-bar{
     background-color: #a8a8a8;
+    border: 1px solid black;
+    max-height: 70px;
+    min-height: 70px;
+    height: 70px;
+}
+
+.header-bar::after{
+    content: '';
+    display:block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+
+}
+
+.bar-left{
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.bar-right{
+    float: right;
+    margin-right: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.tab-pane{
+    border: 1px solid black;
+}
+
+#main-content{
+    border: 1px solid black;
+    min-height: 80vh   ;
 }
